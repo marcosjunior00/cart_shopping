@@ -12,8 +12,8 @@ Este projeto é uma cópia simplificada do site do Mercado Livre, desenvolvida u
 
 ### Galeria
 <div align="center">
-  <img src="https://github.com/marcosjunior00/cart-shopping/assets/132008242/13b566be-414e-47cb-9022-37d6a7a672d9" width="450">
-  <img src="https://github.com/marcosjunior00/cart-shopping/assets/132008242/8cd341e1-2cb1-425f-9d2e-0306ad42ef86" width="450">
+  <img src="https://github.com/marcosjunior00/cart-shopping/assets/132008242/13b566be-414e-47cb-9022-37d6a7a672d9" width="400">
+  <img src="https://github.com/marcosjunior00/cart-shopping/assets/132008242/8cd341e1-2cb1-425f-9d2e-0306ad42ef86" width="400">
 </div>
 
 ## Tecnologias utilizadas
