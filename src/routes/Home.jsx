@@ -5,13 +5,13 @@ import Provider from "../context/Provider";
 
 function Home() {
   return (
-    <>
+    <div>
       <Provider>
         <Header />
         <Products />
         <Cart />
       </Provider>
-    </>
+    </div>
   );
 }
 
