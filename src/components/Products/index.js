@@ -19,18 +19,9 @@ const Products = () => {
   return (
     (loading && <Loading />) || (
       <C.Container>
-        {products.map((product) => {
-          return (
-            <ProductCard
-              key={product.id}
-              data={{
-                title: product.title,
-                price: product.price,
-                thumbnail: product.thumbnail,
-              }}
-            />
-          );
-        })}
+        {products.map((product) => (
+          <ProductCard key={product.id} data={{ product }} />
+        ))}
       </C.Container>
     )
   );

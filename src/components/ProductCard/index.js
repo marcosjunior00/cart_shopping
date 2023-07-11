@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
 import propTypes from "prop-types";
 
 import * as C from "./styles";
 import formatCurrency from "../../utils/formatCurrency";
 import AppContext from "../../context/appContext";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ data }) => {
-  const { title, thumbnail, price } = data;
+  const { product } = data;
+  const { thumbnail, title, price } = product;
 
   const { cartItems, setCartItems, setProduct } = useContext(AppContext);
 
@@ -18,7 +19,7 @@ const ProductCard = ({ data }) => {
   };
 
   const redirectToProduct = () => {
-    setProduct(data);
+    setProduct(product);
     navigate("/product");
   };
 
