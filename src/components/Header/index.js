@@ -1,4 +1,6 @@
 import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+
 import * as C from "./styles";
 import fetchProducts from "../../api/fetchProducts";
 import AppContext from "../../context/appContext";
@@ -20,7 +22,9 @@ const Header = () => {
 
   return (
     <C.Container>
-      <C.Title>LojaOnline</C.Title>
+      <Link>
+        <C.Title>LojaOnline</C.Title>
+      </Link>
 
       <C.RightGroup>
         <C.InputSearchGroup>

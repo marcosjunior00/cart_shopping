@@ -1,18 +1,9 @@
-import Cart from "../components/Cart";
-import Header from "../components/Header";
-import Products from "../components/Products";
-import Provider from "../context/Provider";
+import React from "react";
 
-function Home() {
-  return (
-    <div>
-      <Provider>
-        <Header />
-        <Products />
-        <Cart />
-      </Provider>
-    </div>
-  );
-}
+import Products from "../components/Products";
+
+const Home = () => {
+  return <Products />;
+};
 
 export default Home;
