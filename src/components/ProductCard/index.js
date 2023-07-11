@@ -1,20 +1,29 @@
 import React, { useContext } from "react";
-import * as C from "./styles";
+import { useNavigate } from "react-router-dom";
 import propTypes from "prop-types";
+
+import * as C from "./styles";
 import formatCurrency from "../../utils/formatCurrency";
 import AppContext from "../../context/appContext";
 
 const ProductCard = ({ data }) => {
   const { title, thumbnail, price } = data;
 
-  const { cartItems, setCartItems } = useContext(AppContext);
+  const { cartItems, setCartItems, setProduct } = useContext(AppContext);
+
+  const navigate = useNavigate();
 
   const addCartItem = () => {
     setCartItems([...cartItems, data]);
   };
 
+  const redirectToProduct = () => {
+    setProduct(data);
+    navigate("/product");
+  };
+
   return (
-    <C.Card>
+    <C.Card onClick={redirectToProduct}>
       <C.ProductImg
         src={thumbnail.replace(/\w\.jpg/gi, "W.jpg")}
         alt="product_image"
