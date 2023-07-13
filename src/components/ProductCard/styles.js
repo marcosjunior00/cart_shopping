@@ -42,13 +42,13 @@ export const ProductTitle = styled.h2`
 
 export const BtnAdd = styled.button`
   position: absolute;
-  top: -10px;
+  top: 8px;
   right: 8px;
   border: 1px solid #02a;
   opacity: 0.5;
   padding: 0 5px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
   cursor: pointer;
   transition: 0.2s;

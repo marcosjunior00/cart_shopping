@@ -8,7 +8,7 @@ const Cart = () => {
   const { cartItems, activeCart, setActiveCart } = useContext(AppContext);
 
   const total = cartItems.reduce(
-    (acumulador, item) => item.price + acumulador,
+    (acumulador, cartItem) => cartItem.product.price + acumulador,
     0
   );
 
@@ -16,17 +16,13 @@ const Cart = () => {
     setActiveCart(false);
   };
 
-  var id = 0;
-
   return (
     <>
       <C.Container className={`${activeCart ? "" : "cart-disabled"}`}>
         <C.BtnLeave onClick={turnToFalse}>X</C.BtnLeave>
         <C.CartItems>
           {cartItems.map((cartItem) => {
-            id++;
-            cartItem.id = id;
-            return <CartItem key={id} access={id} data={cartItem} />;
+            return <CartItem key={cartItem.product.id} data={cartItem} />;
           })}
         </C.CartItems>
 

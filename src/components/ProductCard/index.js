@@ -15,7 +15,7 @@ const ProductCard = ({ data }) => {
   const navigate = useNavigate();
 
   const addCartItem = async () => {
-    await setCartItems([...cartItems, data]);
+    setCartItems([...cartItems, data]);
   };
 
   const redirectToProduct = () => {

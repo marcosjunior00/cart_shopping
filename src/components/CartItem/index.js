@@ -4,21 +4,18 @@ import formatCurrency from "../../utils/formatCurrency";
 import AppContext from "../../context/appContext";
 import * as C from "./styles";
 
-const CartItem = async ({ access, data }) => {
-  const { cartItems, setCartItems } = await useContext(AppContext);
-  const { thumbnail, title, price } = await data;
+const CartItem = ({ data }) => {
+  const { cartItems, setCartItems } = useContext(AppContext);
+  const { id, thumbnail, title, price } = data.product;
 
   const removeCartItem = () => {
-    const updatedCartItems = cartItems.filter((item) => item.id !== access);
+    const updatedCartItems = cartItems.filter((item) => item.id !== id);
     setCartItems(updatedCartItems);
   };
 
   return (
     <C.Container className="cart-item">
-      <C.CartItemImg
-        src={thumbnail.replace(/\w\/.png/gi, "W.jpg")}
-        alt="Product image"
-      />
+      <C.CartItemImg src={thumbnail} alt="Product image" />
 
       <C.Content>
         <C.ItemTitle>{title}</C.ItemTitle>
