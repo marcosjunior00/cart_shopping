@@ -9,7 +9,9 @@ const CartItem = ({ data }) => {
   const { id, thumbnail, title, price } = data.product;
 
   const removeCartItem = () => {
-    const updatedCartItems = cartItems.filter((item) => item.id !== id);
+    const updatedCartItems = cartItems.filter(
+      (cartItem) => cartItem.product.id !== id
+    );
     setCartItems(updatedCartItems);
   };
 
