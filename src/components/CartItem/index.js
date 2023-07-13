@@ -4,9 +4,9 @@ import formatCurrency from "../../utils/formatCurrency";
 import AppContext from "../../context/appContext";
 import * as C from "./styles";
 
-const CartItem = ({ access, data }) => {
-  const { cartItems, setCartItems } = useContext(AppContext);
-  const { thumbnail, title, price } = data;
+const CartItem = async ({ access, data }) => {
+  const { cartItems, setCartItems } = await useContext(AppContext);
+  const { thumbnail, title, price } = await data;
 
   const removeCartItem = () => {
     const updatedCartItems = cartItems.filter((item) => item.id !== access);

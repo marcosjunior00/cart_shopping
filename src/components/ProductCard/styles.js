@@ -6,7 +6,7 @@ export const Card = styled.div`
   background-color: #fff;
   box-shadow: 2px 2px 4px #eee;
   border-radius: 3px;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 
   &:hover {
@@ -42,7 +42,7 @@ export const ProductTitle = styled.h2`
 
 export const BtnAdd = styled.button`
   position: absolute;
-  top: 8px;
+  top: -10px;
   right: 8px;
   border: 1px solid #02a;
   opacity: 0.5;

@@ -14,8 +14,8 @@ const ProductCard = ({ data }) => {
 
   const navigate = useNavigate();
 
-  const addCartItem = () => {
-    setCartItems([...cartItems, data]);
+  const addCartItem = async () => {
+    await setCartItems([...cartItems, data]);
   };
 
   const redirectToProduct = () => {
@@ -24,16 +24,18 @@ const ProductCard = ({ data }) => {
   };
 
   return (
-    <C.Card onClick={redirectToProduct}>
-      <C.ProductImg
-        src={thumbnail.replace(/\w\.jpg/gi, "W.jpg")}
-        alt="product_image"
-      />
+    <C.Card>
+      <div onClick={redirectToProduct}>
+        <C.ProductImg
+          src={thumbnail.replace(/\w\.jpg/gi, "W.jpg")}
+          alt="product_image"
+        />
 
-      <C.CardInfo>
-        <C.ProductPrice>{formatCurrency(price, "BRL")}</C.ProductPrice>
-        <C.ProductTitle>{title}</C.ProductTitle>
-      </C.CardInfo>
+        <C.CardInfo>
+          <C.ProductPrice>{formatCurrency(price, "BRL")}</C.ProductPrice>
+          <C.ProductTitle>{title}</C.ProductTitle>
+        </C.CardInfo>
+      </div>
 
       <C.BtnAdd className="btnAdd" type="button" onClick={addCartItem}>
         <i className="bx bx-cart-add"></i>
