@@ -14,7 +14,7 @@ const Products = () => {
       setProducts(response);
       setLoading(false);
     });
-  }, []);
+  }, [setLoading, setProducts]);
 
   return (
     (loading && <Loading />) || (
