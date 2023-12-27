@@ -16,10 +16,8 @@ Lembrando que ainda existem alguns detalhes para serem corrigidos, mas acessando
 ## 
 
 ### Galeria
-<div align="center">
-  <img src="https://github.com/marcosjunior00/cart-shopping/assets/132008242/13b566be-414e-47cb-9022-37d6a7a672d9" width="400">
-  <img src="https://github.com/marcosjunior00/cart-shopping/assets/132008242/8cd341e1-2cb1-425f-9d2e-0306ad42ef86" width="400">
-</div>
+![image](https://github.com/marcosjunior00/cart_shopping/assets/132008242/94345fc5-a1ce-4917-a354-c8db7645c5ec)
+
 
 ## Tecnologias utilizadas
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" />
