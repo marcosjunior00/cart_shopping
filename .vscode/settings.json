@@ -2,10 +2,11 @@
   "editor.tabSize": 2,
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
 
   "editor.formatOnSave": true,
+
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#1f6fd0",
     "activityBar.background": "#1f6fd0",

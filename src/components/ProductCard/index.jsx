@@ -23,6 +23,8 @@ const ProductCard = ({ data }) => {
     navigate("/product");
   };
 
+  console.log(product)
+
   return (
     <C.Card>
       <div onClick={redirectToProduct}>
