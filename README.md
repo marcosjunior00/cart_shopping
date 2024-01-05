@@ -1,4 +1,7 @@
 # Cart Shopping
+### 🚧 Em Construção 🚧 
+
+
 Este projeto é uma cópia simplificada do site do Mercado Livre, desenvolvida utilizando a API oficial do Mercado Livre para obter informações sobre produtos. O objetivo é demonstrar como integrar a API do Mercado Livre e fornecer uma interface semelhante ao site original e também para treinar meus conhecimentos com ReactJs
 
 Lembrando que ainda existem alguns detalhes para serem corrigidos, mas acessando, é possível ter uma boa noção do que este projeto é capaz!
